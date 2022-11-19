@@ -1,11 +1,8 @@
 import { createContext } from "react";
 
-export type GlobalContent = {
-  switchToSignup: () => void;
-  switchToSignin: () => void;
-};
 
-export const AccountContext = createContext<GlobalContent>({
+
+export const AccountContext = createContext({
     switchToSignup: () => {},
     switchToSignin: () => {},
 });
